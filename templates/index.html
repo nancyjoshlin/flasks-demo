@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Flask DevOps Demo</h1>
+
+    <p>Welcome to my first Flask application.</p>
+
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+
+    <h2 id="msg"></h2>
+
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML="Hello from Flask!";
+}
+</script>
+
+</body>
+</html>
